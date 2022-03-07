@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 body {
   background-color: steelblue;
   color: #fff;
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,6 +74,13 @@ body {
   color: #fff;
 }
 
-.form-control input:focus, .form-control input:valid {
+.form-control input:focus,
+.form-control input:valid {
   outline: 0;
+}
+
+.form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
 }
