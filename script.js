@@ -6,6 +6,7 @@ labels.forEach(label => {
   // then joining it back into a string
   label.innerHTML = label.innerText
   .split('')
-  .map((letter, idx) => `<span>${letter}</span>`)
+  // adding the inline style to do the delay of the transition by 50ms
+  .map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
   .join('')
 })
